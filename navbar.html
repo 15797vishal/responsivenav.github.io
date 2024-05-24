@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive navabr</title>
+    <link rel="stylesheet" href="./style2.css" class="st">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+
+    }
+    .main{
+        display: flex;
+    }
+    .right{
+        display: flex;
+    }
+</style>
+<body>
+   <nav>
+    <ul class="sidebar"><li onclick="hidesidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+       <li><a href="">left data</a></li>
+       <li><a href="">right1</a></li>
+       <li><a href="">right2    </a></li>
+       <li><a href="">right3data</a></li>
+
+    </ul>
+    <ul><li class="hideOnM"><a href="">maindata </a></li>
+        <li class="hideOnMob"><a href="">left data</a></li>
+        <li class="hideOnMob"><a href="">right1</a></li>
+        <li class="hideOnMob"><a href="">right2    </a></li>
+        <li class="hideOnMob"><a href="">right3data</a></li>
+ <li class="menu-btn" onclick="dispsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="26px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+     </ul>
+   </nav>
+    </div>
+
+    <div class="datas">
+        <div class="left">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Images-Wallpaper-HD-Background.jpg" alt="">
+        </div>
+        <div class="right" style="color: white ; font-size:20px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus earum ab omnis, natus eos, corporis voluptatum voluptatem laboriosam sunt a doloribus fugit veniam perspiciatis expedita modi magni autem sit at iusto? Maxime deserunt a temporibus aspernatur ab ullam eius odit reprehenderit illo nisi qui expedita libero ipsa, nemo non beatae enim. Sapiente iste amet voluptatem, est rerum architecto numquam voluptatum?</p>
+        </div>
+    </div>
+
+    <div class="datas">
+        <div class="left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus earum ab omnis, natus eos, corporis voluptatum voluptatem laboriosam sunt a doloribus fugit veniam perspiciatis expedita modi magni autem sit at iusto? Maxime deserunt a temporibus aspernatur ab ullam eius odit reprehenderit illo nisi qui expedita libero ipsa, nemo non beatae enim. Sapiente iste amet voluptatem, est rerum architecto numquam voluptatum?</p>
+            
+        </div>
+        <div class="right" style="color: white ; font-size:20px">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Images-Wallpaper-HD-Background.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="datas">
+        <div class="left">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Images-Wallpaper-HD-Background.jpg" alt="">
+        </div>
+        <div class="right" style="color: white ; font-size:20px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus earum ab omnis, natus eos, corporis voluptatum voluptatem laboriosam sunt a doloribus fugit veniam perspiciatis expedita modi magni autem sit at iusto? Maxime deserunt a temporibus aspernatur ab ullam eius odit reprehenderit illo nisi qui expedita libero ipsa, nemo non beatae enim. Sapiente iste amet voluptatem, est rerum architecto numquam voluptatum?</p>
+        </div>
+    </div>
+
+    <script>
+        function dispsidebar(){
+            var sidebars =document.querySelector(".sidebar");
+            sidebars.style.display="flex";
+        }
+
+        function hidesidebar(){
+            var hideside  =document.querySelector(".sidebar");
+            hideside.style.display='none';
+        }
+
+    </script>
+</body>
+</html>
